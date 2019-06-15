@@ -27,7 +27,7 @@ def fetch_data():
             record['busier_than_usual'] = len(row.cssselect('.text-danger')) > 0
         else:
             record['waiting_time'] = ''
-            record['current_patients'] = 0
+            record['current_patients'] = '0'
             record['busier_than_usual'] = False 
 
         result.append(record)
